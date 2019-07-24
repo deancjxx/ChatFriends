@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "203136643168",
+    "firebase_url": "https://chatfriends-ad6df.firebaseio.com",
+    "project_id": "chatfriends-ad6df",
+    "storage_bucket": "chatfriends-ad6df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203136643168:android:4ee7c201edd8ebdc",
+        "android_client_info": {
+          "package_name": "com.example.chatfriends"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203136643168-h45tkccsh6ph4t9c5vej39p7usctl54i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatfriends",
+            "certificate_hash": "57b3155073b51e8e13dcf9bbb77b195e435cbcb1"
+          }
+        },
+        {
+          "client_id": "203136643168-3j7ff51c7qr1ae0acu64hj7mpdrnh4qg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_zUjHPdLtTKHQkWUAa2pmhlV5YjMbW80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203136643168-3j7ff51c7qr1ae0acu64hj7mpdrnh4qg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

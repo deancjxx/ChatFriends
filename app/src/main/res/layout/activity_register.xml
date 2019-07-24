@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+	 	xmlns:tools="http://schemas.android.com/tools"
+	 	android:layout_width="match_parent"
+	 	android:layout_height="match_parent"
+	 	tools:context=".RegisterActivity"
+		android:background="@color/chatBackground">
+
+	<Button
+			android:layout_width="150dp"
+			android:layout_height="150dp"
+			android:id="@+id/button_select_photo"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:layout_marginEnd="8dp"
+			app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="32dp"
+			app:layout_constraintTop_toTopOf="parent"
+			android:background="@drawable/raunded_photo"
+			android:text="Fotoğraf \n seç"
+			android:textStyle="bold"
+			android:textSize="16sp"
+			android:textColor="@android:color/white" android:layout_marginBottom="24dp"
+			app:layout_constraintBottom_toTopOf="@+id/editText_register_userName"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+			android:layout_width="150dp" android:layout_height="150dp"
+			app:civ_border_width="4dp"
+			app:civ_border_color="@android:color/white"
+			app:layout_constraintEnd_toEndOf="@+id/button_select_photo"
+			app:layout_constraintStart_toStartOf="@+id/button_select_photo"
+			app:layout_constraintBottom_toBottomOf="@+id/button_select_photo"
+			app:layout_constraintTop_toTopOf="@+id/button_select_photo"
+			android:id="@+id/select_photo_imageview_register"/>
+	<EditText
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:inputType="textPersonName"
+			android:ems="10"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent" android:id="@+id/editText_register_userName"
+			android:background="@drawable/rounded_edittext"
+			android:layout_marginStart="32dp" android:layout_marginEnd="32dp"
+			android:hint="Kullanıcı Adı"
+			android:paddingStart="20sp" android:layout_marginTop="32dp"
+			app:layout_constraintTop_toBottomOf="@+id/button_select_photo"/>
+	<EditText
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:inputType="textEmailAddress"
+			android:ems="10"
+			android:id="@+id/editText_register_mail"
+			android:background="@drawable/rounded_edittext"
+			app:layout_constraintStart_toStartOf="@+id/editText_register_userName"
+			app:layout_constraintEnd_toEndOf="@+id/editText_register_userName"
+			android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/editText_register_userName"
+			android:hint="Email" android:paddingStart="20sp"/>
+	<EditText
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:inputType="textPassword"
+			android:ems="10"
+			android:id="@+id/editText_register_password"
+			android:background="@drawable/rounded_edittext"
+			app:layout_constraintStart_toStartOf="@+id/editText_register_mail"
+			app:layout_constraintEnd_toEndOf="@+id/editText_register_mail"
+			android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/editText_register_mail"
+			android:hint="Şifre" android:paddingStart="20sp"/>
+	<Button
+			android:text="Kayıt Ol"
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			app:layout_constraintStart_toStartOf="@+id/editText_register_password"
+			app:layout_constraintEnd_toEndOf="@+id/editText_register_password"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:id="@+id/register_button_register" android:layout_marginTop="16dp"
+			app:layout_constraintTop_toBottomOf="@+id/editText_register_password" android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp" android:background="@drawable/rounded_button"/>
+	<Button
+			android:text="Giriş Yap"
+			android:layout_width="0dp"
+			android:layout_height="47dp"
+			app:layout_constraintStart_toStartOf="@+id/register_button_register"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"
+			android:textSize="16sp"
+			android:id="@+id/login_button_register"
+			android:backgroundTint="@color/colorButton"
+			android:background="@drawable/rounded_button"
+			app:layout_constraintEnd_toEndOf="@+id/register_button_register"
+			app:layout_constraintTop_toBottomOf="@+id/register_button_register" android:layout_marginTop="16dp"
+			app:layout_constraintHorizontal_bias="0.75"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
